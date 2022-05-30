@@ -1,0 +1,20 @@
+/* Generals */
+
+:root {
+    --squareWidth: 60px;
+}
+
+header {
+    background-color: rgb(38, 4, 62);
+}
+
+
+/* Grid */
+
+
+
+.square {
+    border: 1px solid black;
+    width: var(--squareWidth);
+    aspect-ratio: 1;
+}
