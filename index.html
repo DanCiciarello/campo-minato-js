@@ -12,26 +12,57 @@
 </head>
 <body>
 
+    <!-- Header -->
     <header>
         <div class="container">
             <div class="row text-white py-3">
-                <div class="col-6 d-flex align-items-center">
-                    <h1>Campo Minato</h1>
-                </div>
-                <div class="col-6 d-flex align-items-center justify-content-end">
-                    <span>Difficoltà</span>
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    
+                    <!-- Logo -->
+                    <img src="https://apprecs.org/ios/images/app-icons/256/e7/451931111.jpg" class="img-logo">
+                    <h2>CampoMinato</h2>
+
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- Main section -->
     <main>
         <div class="container">
-            <div class="row py-5">
-                <div class="col-12">
-                    <div class="d-flex flex-wrap m-auto" id="grid"></div>
+            <div class="row pt-5 pb-3">
+
+                <!-- Menu game control -->
+                <div class="customMenuContainer col-6 offset-3 d-flex justify-content-between">
+                    
+                    <!-- Level selector -->
+                    <div class="customMenu d-flex align-items-center">
+                        <span>Livello:</span>
+                        <select name="levelSelect">
+                            <option value="easy">Facile</option>
+                            <option value="medium">Medio</option>
+                            <option value="hard">Difficile</option>
+                        </select>
+                        <button id="generateGameBtn">Gioca</button>
+                    </div>
+
+                    <!-- Points counter -->
+                    <div class="customMenu">
+                        <div class="pointsCounterContainer d-flex align-items-center justify-content-center">
+                            <span id="pointsCounter"></span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+            <!-- Game grid -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap m-auto d-none" id="grid"></div>
+                </div>
+            </div>
+
         </div>
     </main>
 
